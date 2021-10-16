@@ -28,4 +28,4 @@ type: page
 
 ## Commentaires
 
-{% include _comments.html %}
+
