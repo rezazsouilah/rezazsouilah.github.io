@@ -32,6 +32,4 @@ type: page
     Outil en ligne pour compresser png ou jpg
 
 
-## Commentaires
 
-{% include _comments.html %}
