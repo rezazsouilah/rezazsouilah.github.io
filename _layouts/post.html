@@ -63,12 +63,7 @@ layout: default
         {% endif %}
 
         {% include previousAndNext.html %}
-
-        <h2 id="comments">Comments</h2>
-        
-    {% if page.comments_id %}
-			{% include comments.html %}
-    {% endif %}
+ 
 
 
     </div>
@@ -85,7 +80,7 @@ layout: default
                     {% if hasSimilar.size > 0 %}
                     <li><a href="#similar_posts">Similar Posts</a></li>
                     {% endif %}
-                    <li><a href="#comments">Comments</a></li>
+			 
                 </ul>
             </div>
             <!-- 其他div框放到这里 -->
@@ -93,6 +88,10 @@ layout: default
         </div>
     </div>
 </div>
+
+{% if page.comments_id %}
+			{% include comments.html %}
+    {% endif %}
 <script>
 /**
  * target _blank
